@@ -7,19 +7,18 @@ width: auto;
 }
 
 h1 {
-    background: #F5A925;
     font-size: 50px;
-    color: #0051A8;
     margin-left: auto;
     margin-right: auto;
-    
+    letter-spacing: 0.25em;
 }
 
 .mainNav{
+    background: #F5A925;
+    color: #0051A8;
     font-size: 35px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 100px;
-    ;
 }
 
 a.linksNav {
@@ -31,11 +30,6 @@ a.linksNav:hover{
     color: black;
 }
 
-.klassentest {
-    color: #0076F5;
-}
-p.dottedtest {
-    border-style: dotted;
-}
+
   
  
