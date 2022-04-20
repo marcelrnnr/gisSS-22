@@ -4,21 +4,21 @@
 .media {
     
 }
+*/
 
-/* Variablen erstellen
-:root{
-    --primary: color;
-    --secondary: color2;
+:root {
+    background: #A88D5E;
+    ;
 }
 
-Einsetzen beispiel:
-background: var(--primary);
-
-*/
+:root {
+    ---primary: white;
+    ---secondary: black;
+}
 
 body {
     font-family: Roboto Condensed;
-    background-color: #A88D5E;
+
 }
 
 html,
@@ -30,7 +30,7 @@ body {
 
 
 h1 {
-    color: white;
+    color: var(---primary);
     font-family: Roboto Condensed;
     font-size: 65px;
     margin-left: 50px;
@@ -42,14 +42,17 @@ h1 {
     margin-top: 0%;
 }
 
+
+
 .ueberschrift {
     width: 33%;
 }
 
 
-h2 {
 
-    color: black;
+
+h2 {
+    color: var(---secondary);
     margin-bottom: 100px;
     margin-left: 50px;
     font-size: 30px;
@@ -57,10 +60,6 @@ h2 {
     animation-duration: 1.8s;
 }
 
-h3{
-    padding-left: 20px;
-    margin: 0%;
-}
 
 @keyframes animation1 {
     40% {
@@ -78,16 +77,18 @@ h3{
     }
 }
 
+h3 {
+    color: var(---secondary);
+    padding-left: 20px;
+    margin: 0%;
+}
+
 .mainNav {
-
-
-
     padding-right: 50px;
 }
 
 .headerbar {
     background: #F5A925;
-    color: #0051A8;
     font-size: 35px;
     font-family: Roboto Condensed;
     padding-top: 20px;
@@ -108,19 +109,19 @@ img:hover {
 }
 
 a.linksNav {
-    color: black;
+    color: var(---secondary);
     text-decoration: none;
     margin: 10px;
 }
 
 a.linksNav:hover {
-    color: white;
+    color: var(---primary);
 }
 
 table {
     font-family: Roboto Condensed;
     background-color: #0051A8;
-    color: white;
+    color: var(---primary);
     padding: 25px;
     margin-left: 40%;
 }
@@ -138,7 +139,7 @@ footer {
 }
 
 #frage1 {
-    color: white;
+    color: #F5A925;
     font-size: xx-large;
 
 }
@@ -151,7 +152,6 @@ p a {
     position: relative;
     animation-name: animation2;
     animation-duration: 8s;
-    margin-top: 50px;
 }
 
 @keyframes animation2 {
@@ -207,40 +207,40 @@ p a {
     width: 66%;
     position: relative;
     top: 25%;
-   
+
 }
 
-.vorschaubilder1-text p{
+.vorschaubilder1-text p {
     padding-left: 20px;
     padding-right: 25%;
-   
+
 }
 
 .vorschaubilder2-text {
     width: 66%;
     position: relative;
     top: 25%;
-  
+
 }
 
 
-.vorschaubilder2-text p{
+.vorschaubilder2-text p {
     padding-right: 20px;
     padding-left: 25%;
-   
+
 }
 
-.vorschaubilder2-text h3{
+.vorschaubilder2-text h3 {
     padding-right: 37px;
     text-align: end;
-   
+
 }
 
 
 .vorschaubutton {
     background-color: #0051A8;
     border: none;
-    color: white;
+    color: var(---primary);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -251,7 +251,11 @@ p a {
 
 }
 
-.vorschaubilder2-text .vorschaubutton{
+.vorschaubilder2-text .vorschaubutton {
     margin-left: 81%;
 }
 
+h3::first-letter {
+    color: #0051A8;
+    font-size: 1.5em;
+}
