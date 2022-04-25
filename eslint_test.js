@@ -1,3 +1,4 @@
-const test = 0
+const test = 0;
+
 console.log(test);
 
