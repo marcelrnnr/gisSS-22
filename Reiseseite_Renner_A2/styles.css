@@ -44,6 +44,7 @@ h1 {
 
 
 
+
 .ueberschrift {
     width: 33%;
 }
@@ -85,7 +86,8 @@ h3 {
 
 .mainNav {
     padding-right: 50px;
-}
+} 
+
 
 .headerbar {
     background: #F5A925;
@@ -95,8 +97,8 @@ h3 {
     padding-bottom: 15px;
     display: flex;
     justify-content: space-between;
-
 }
+
 
 img {
     filter: grayscale(45%);
@@ -207,7 +209,6 @@ p a {
     width: 66%;
     position: relative;
     top: 25%;
-
 }
 
 .vorschaubilder1-text p {
@@ -259,3 +260,4 @@ h3::first-letter {
     color: #0051A8;
     font-size: 1.5em;
 }
+
