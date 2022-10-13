@@ -1,35 +1,263 @@
-body {
-background-color: #A88D5E;
-width: auto;
-  border: 7px solid #0051A8;
-  padding: 50px;
-  margin: auto;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+/*
+@media (max-width: 480px)
+.media {
+    
 }
+*/
+
+:root {
+    background: #A88D5E;
+    ;
+}
+
+:root {
+    ---primary: white;
+    ---secondary: black;
+}
+
+body {
+    font-family: Roboto Condensed;
+
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+
 
 h1 {
-    font-size: 50px;
-    margin-left: auto;
+    color: var(---primary);
+    font-family: Roboto Condensed;
+    font-size: 65px;
+    margin-left: 50px;
     margin-right: auto;
-    letter-spacing: 0.25em;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    letter-spacing: 0.20em;
+    padding-top: 0%;
+    margin-top: 0%;
 }
 
-.mainNav{
+
+
+
+.ueberschrift {
+    width: 33%;
+}
+
+
+
+
+h2 {
+    color: var(---secondary);
+    margin-bottom: 100px;
+    margin-left: 50px;
+    font-size: 30px;
+    animation-name: animation1;
+    animation-duration: 1.8s;
+}
+
+
+@keyframes animation1 {
+    40% {
+        color: #F5A925;
+        font-size: xx-large;
+    }
+
+    70% {
+        color: #F5A925;
+        font-size: xx-large;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+h3 {
+    color: var(---secondary);
+    padding-left: 20px;
+    margin: 0%;
+}
+
+.mainNav {
+    padding-right: 50px;
+} 
+
+
+.headerbar {
     background: #F5A925;
-    color: #0051A8;
     font-size: 35px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 100px;
+    font-family: Roboto Condensed;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+img {
+    filter: grayscale(45%);
+    -webkit-filter: grayscale(45%);
+}
+
+img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
 }
 
 a.linksNav {
-    color: white;
+    color: var(---secondary);
     text-decoration: none;
     margin: 10px;
 }
-a.linksNav:hover{
-    color: black;
+
+a.linksNav:hover {
+    color: var(---primary);
+}
+
+table {
+    font-family: Roboto Condensed;
+    background-color: #0051A8;
+    color: var(---primary);
+    padding: 25px;
+    margin-left: 40%;
 }
 
 
-  
- 
+footer {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 40%;
+}
+
+[href] {
+    color: #0051A8;
+}
+
+#frage1 {
+    color: #F5A925;
+    font-size: xx-large;
+
+}
+
+p a {
+    background: rgba(143, 172, 211, 1);
+}
+
+#paperplane {
+    position: relative;
+    animation-name: animation2;
+    animation-duration: 8s;
+}
+
+@keyframes animation2 {
+    0% {
+        left: -150px;
+    }
+
+    100% {
+        left: 110%;
+        opacity: 0%;
+    }
+}
+
+.vorschaubilder-wrapper {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.vorschaubilder1 img {
+    width: 33%;
+    max-height: 100%;
+
+}
+
+.vorschaubilder2 img {
+    width: 33%;
+    max-height: 100%;
+}
+
+.intro-header {
+    margin-bottom: 20px;
+}
+
+.vorschaubilder1 {
+    display: flex;
+    justify-content: flex-start;
+    height: 400px;
+    width: 100%;
+
+}
+
+.vorschaubilder2 {
+    display: flex;
+    justify-content: flex-end;
+    height: 400px;
+    width: 100%;
+
+}
+
+.vorschaubilder1-text {
+    width: 66%;
+    position: relative;
+    top: 25%;
+}
+
+.vorschaubilder1-text p {
+    padding-left: 20px;
+    padding-right: 25%;
+
+}
+
+.vorschaubilder2-text {
+    width: 66%;
+    position: relative;
+    top: 25%;
+
+}
+
+
+.vorschaubilder2-text p {
+    padding-right: 20px;
+    padding-left: 25%;
+
+}
+
+.vorschaubilder2-text h3 {
+    padding-right: 37px;
+    text-align: end;
+
+}
+
+
+.vorschaubutton {
+    background-color: #0051A8;
+    border: none;
+    color: var(---primary);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+
+}
+
+.vorschaubilder2-text .vorschaubutton {
+    margin-left: 81%;
+}
+
+h3::first-letter {
+    color: #0051A8;
+    font-size: 1.5em;
+}
+
